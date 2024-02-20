@@ -3,7 +3,7 @@
 ## Inleiding
 Je vrienden Freek en Bernard zijn allebei doorgewinterde horeca-toppers, maar vanwege de wereldwijde pandemie zijn zij helaas hun baan kwijtgeraakt. Gelukkig zijn Freek en Bernard niet voor één gat te vangen, dus zijn ze samen een bedrijfje begonnen:
 
-![company-logo](./src/assets/screenshot-logo.png)
+![company-logo](/Users/Sara/Documents/Frontend Folder/frontend-react-fruitbasket-order-form/src/assets/screenshot-logo.png)
 
 Zelf vraag je je af of het slim was om Bernards 9-jarige nichtje het logo te laten ontwerpen, maar dat terzijde. Je bent allang blij dat ze iets te doen hebben. Daarom wil je ze natuurlijk een handje helpen door een online bestelformulier voor ze te maken!
 
@@ -21,7 +21,7 @@ of gebruik de WebStorm knop (npm run dev). Open http://localhost:5173 om de pagi
 ## Opdracht 1 - State
 Gebruikers gaan zelf aan de slag met het samenstellen van hun fruitmand. Ze hebben de keuze tussen vier typen fruit waarvan ze de aantallen mogen bepalen:
 
-![fruit-counters](./src/assets/screenshot-fruit-counters.png)
+![fruit-counters](/Users/Sara/Documents/Frontend Folder/frontend-react-fruitbasket-order-form/src/assets/screenshot-fruit-counters.png)
 
 Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de functionaliteit. Heb je tijd over? Kijk dan vooral bij de bonusopdrachten!
 
@@ -40,7 +40,7 @@ Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de 
 ## Opdracht 2 - Formulier bouwen
 Het is natuurlijk lastig om een fruitmand te bestellen als we niet weten waar die mand naartoe moet. Daarom gaan we een bestelformulier maken:
 
-![formulier-no-styling](./src/assets/screenshot-form.png)
+![formulier-no-styling](/Users/Sara/Documents/Frontend Folder/frontend-react-fruitbasket-order-form/src/assets/screenshot-form.png)
 
 Zoals je ziet is de styling niet belangrijk, focus je in eerste instantie op de functionaliteit. Heb je tijd over? Kijk dan vooral bij de bonusopdrachten!
 
