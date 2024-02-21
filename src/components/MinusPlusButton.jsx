@@ -1,7 +1,8 @@
-function MinusPlusButton(signProp){
+
+function MinusPlusButton(buttonProps){
     return (
-        <button type="button">
-            {signProp.sign}
+        <button type="button" onClick = {buttonProps.clicked}>
+            {buttonProps.sign}
         </button>
     );
 }
