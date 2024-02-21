@@ -1,13 +1,16 @@
 export const incrementCounter = (counter, inStock) =>{
+    console.log(counter);
+    console.log(inStock);
     if(counter < inStock && inStock > 0){
-        return  counter++;
+        return  ++counter;
     }
     else{
-
         console.log("Out of stock!");
-    } return  counter;
+        return  counter;
+    }
 }
 export const decrementCounter = (counter) =>{
+    console.log(counter);
     if (counter <= 0) {
         //honestly checking here that the counter is less than or equal to 0 is redundant
         //because the counter is a number, so it can't be less than 0 because it's initialized to 0
@@ -23,5 +26,5 @@ export const decrementCounter = (counter) =>{
         return counter;
     }
     else
-        return counter --;
+        return --counter;
 }
