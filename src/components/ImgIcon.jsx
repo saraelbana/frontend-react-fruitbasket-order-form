@@ -1,9 +1,10 @@
 
 function ImgIcon(iconProp){
     return(
-        <p>
+        <img>
+
             {iconProp.icon}
-        </p>
+        </img>
     );
 }
 export default ImgIcon;
