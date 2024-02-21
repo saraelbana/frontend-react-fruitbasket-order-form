@@ -1,12 +1,7 @@
-import {incrementCounter} from "../helpers/inventoryCalculations.js";
-
-import {useState} from "react";
-
-function FruitCounterTextField(fruitProps){
-    const [counter, setCounter] = useState(0);
+function FruitCounterTextField(counter){
     return(
    // {incrementCounter(displayCounter.value,fruitProps.inStock)}
-       <input type="number" id ="displayCounter" readOnly value={counter}>
+       <input type="number" id ="displayCounter" readOnly value={counter.counter}>
 
        </input>
     );
