@@ -25,3 +25,11 @@ export const decrementCounter = (counter) =>{
     else
         return counter --;
 }
+export const buttonClicked = (buttonSign, fruit.inStock, counter) =>{
+    if(buttonSign === "+")
+        incrementCounter(counter,fruit.inStock)
+    else if(buttonSign === "-")
+        decrementCounter(counter)
+    else
+        console.log("Invalid operation!");
+}
