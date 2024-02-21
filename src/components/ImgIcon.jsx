@@ -1,8 +1,9 @@
-import {fruitsInventory} from "../constants/FruitsInventory.js";
 
-function ImgIcon(index){
+function ImgIcon(iconProp){
     return(
-        <p>{fruitsInventory[index].icon}</p>
+        <p>
+            {iconProp.icon}
+        </p>
     );
 }
 export default ImgIcon;
