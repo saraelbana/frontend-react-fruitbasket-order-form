@@ -1,10 +1,9 @@
-
+import "./ImgIcon.css";
 function ImgIcon(iconProp){
     return(
-        <img>
-
+        <label className= "ImgIcon">
             {iconProp.icon}
-        </img>
+        </label>
     );
 }
 export default ImgIcon;
