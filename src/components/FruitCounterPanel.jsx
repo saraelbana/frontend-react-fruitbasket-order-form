@@ -3,7 +3,6 @@ import FruitCounterTextField from "./FruitCounterTextField.jsx";
 import {decrementCounter, incrementCounter} from "../helpers/inventoryCalculations.js";
 import {useState} from "react";
 import "./FruitCounterPanel.css";
-
 function FruitCounterPanel(fruit) {
     const [counter, setCounter] = useState(0);
     const increment = () => {

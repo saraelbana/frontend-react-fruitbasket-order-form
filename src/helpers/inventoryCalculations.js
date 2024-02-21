@@ -28,3 +28,18 @@ export const decrementCounter = (counter) =>{
     else
         return --counter;
 }
+export const getCounterValue = (counter, counterTrigger) =>{
+    if(counterTrigger === true){
+        counterTrigger = false;
+        return 0;
+    }
+    else
+        return counter;
+}
+export const getFruitsStock = (fruitsInventory) =>{
+    let fruitsStock = [];
+    fruitsInventory.fruitsInventory.map((fruit) => {
+        fruitsStock.push(fruit.inStock);
+    });
+    return fruitsStock;
+}

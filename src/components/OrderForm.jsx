@@ -2,6 +2,7 @@ import FruitQuantitySelectorPanel from "./FruitQuantitySelectorPanel.jsx";
 import ResetButton from "./ResetButton.jsx";
 import './OrderForm.css';
 function OrderForm(fruitsInventory) {
+
     return (
        <ul className="OrderForm">
            {
