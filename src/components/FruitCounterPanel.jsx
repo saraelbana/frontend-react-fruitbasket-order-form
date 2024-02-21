@@ -8,7 +8,7 @@ function FruitCounterPanel(fruit) {
     const [counter, setCounter] = useState(0);
     const increment = () => {
         console.log(fruit.inStock);
-        setCounter(prevCounter => incrementCounter(prevCounter,fruit.inStock));
+        setCounter(prevCounter => incrementCounter(prevCounter, fruit.inStock));
     };
     const decrement = () => {setCounter(prevCounter =>decrementCounter(prevCounter));
     };

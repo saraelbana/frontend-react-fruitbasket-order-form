@@ -1,7 +1,7 @@
-function ResetButton(){
+function ResetButton(resetButtonTrigger){
     return (
-        <button type="button" className="ResetButton" >
+        <button type="button" className="ResetButton" onClick= {resetButtonTrigger.clicked} >
             Reset
-    </button>);
+        </button>);
 }
 export default ResetButton;
