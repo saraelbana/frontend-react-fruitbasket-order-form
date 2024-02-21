@@ -1,7 +1,8 @@
-function PlusButton(){
+function MinusPlusButton(signProp){
     return (
         <button type="button">
-            +
-        </button>);
+            {signProp.sign}
+        </button>
+    );
 }
-export default PlusButton;
+export default MinusPlusButton;
