@@ -7,7 +7,7 @@ function FruitQuantitySelectorPanel(fruit){
             <li>
                 <ImgIcon icon = {fruit.icon}/>
                 <FruitNameTextField name = {fruit.name}/>
-                <FruitCounterPanel inStock = {fruit.inStock}/>
+                <FruitCounterPanel inStock = {fruit.inStock} fruitName = {fruit.name} />
             </li>
     );
 }
