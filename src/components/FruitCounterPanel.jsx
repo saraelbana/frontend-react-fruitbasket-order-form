@@ -6,12 +6,14 @@ import {useState} from "react";
 
 function FruitCounterPanel(fruit) {
     const [counter, setCounter] = useState(0);
+    const increment = setCounter(incrementCounter(counter,fruit.inStock));
+    const decrement = setCounter(decrementCounter(counter));
 
     return (
         <div>
-            <MinusPlusButton sign = {"-"} clicked = {setCounter(decrementCounter(counter))}/>
+            <MinusPlusButton sign = {"-"} clicked = {decrement}/>
             <FruitCounterTextField counter = {counter}/>
-            <MinusPlusButton sign = {"+"} clicked = {setCounter(incrementCounter(counter,fruit.inStock))}/>
+            <MinusPlusButton sign = {"+"} clicked = {increment}/>
         </div>
       );
 }
