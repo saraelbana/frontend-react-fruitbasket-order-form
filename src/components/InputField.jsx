@@ -1,4 +1,4 @@
-function InputTextField(inputType){
+function InputField(inputType){
     return(
         // how to determine the type of input field?
         // <input type="text"/> // this is a text field
@@ -8,4 +8,4 @@ function InputTextField(inputType){
         <input type={inputType.type}/>
     );
 }
-export default InputTextField;
+export default InputField;
