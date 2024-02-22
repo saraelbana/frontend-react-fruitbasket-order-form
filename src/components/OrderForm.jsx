@@ -1,5 +1,5 @@
 import FruitQuantitySelectorPanel from "./FruitQuantitySelectorPanel.jsx";
-import ResetButton from "./ResetButton.jsx";
+import ResetButton from "./SubmitResetButton.jsx";
 import './OrderForm.css';
 function OrderForm(fruitsInventory) {
 
@@ -8,7 +8,7 @@ function OrderForm(fruitsInventory) {
            {
                fruitsInventory.fruitsInventory.map((fruit, index) => (<FruitQuantitySelectorPanel key={index} fruit={fruit} />))
            }
-           <ResetButton />
+           <ResetButton/>
        </ul>
     );
 }
