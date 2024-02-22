@@ -1,6 +1,6 @@
-function InputText(){
+function InputTextField(){
     return(
-        <input type="text" />
+        <input type="text"/>
     );
 }
-export default InputText;
+export default InputTextField;
