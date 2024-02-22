@@ -1,12 +1,11 @@
-import ImgIcon from "./ImgIcon.jsx";
 import FruitCounterPanel from "./FruitCounterPanel.jsx";
-import FruitNameTextField from "./FruitNameTextField.jsx";
+import LabelField from "./LabelField.jsx";
 import "./FruitQuantitySelectorPanel.css";
 function FruitQuantitySelectorPanel(fruit){
     return(
             <li className="FruitQuantitySelectorPanel">
-                <ImgIcon icon = {fruit.fruit.icon}/>
-                <FruitNameTextField name = {fruit.fruit.name}/>
+                <LabelField value = {fruit.fruit.icon}/>
+                <LabelField value = {fruit.fruit.name}/>
                 <FruitCounterPanel inStock = {fruit.fruit.inStock} fruitName = {fruit.fruit.name}/>
             </li>
     );

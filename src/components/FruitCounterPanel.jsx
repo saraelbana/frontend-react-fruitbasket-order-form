@@ -1,8 +1,8 @@
 import MinusPlusButton from "./MinusPlusButton.jsx";
-import FruitCounterTextField from "./FruitCounterTextField.jsx";
 import {decrementCounter, incrementCounter} from "../helpers/inventoryCalculations.js";
 import {useState} from "react";
 import "./FruitCounterPanel.css";
+import LabelField from "./LabelField.jsx";
 function FruitCounterPanel(fruit) {
     const [counter, setCounter] = useState(0);
     const increment = () => {
@@ -16,7 +16,7 @@ function FruitCounterPanel(fruit) {
 
         <div className="FruitCounterPanel">
             <MinusPlusButton sign = {"-"} clicked = {decrement}/>
-            <FruitCounterTextField counter = {counter}/>
+            <LabelField value = {counter}/>
             <MinusPlusButton sign = {"+"} clicked = {increment}/>
         </div>
       );
