@@ -2,7 +2,7 @@ function LabelField(displayProp){
     console.log(displayProp);
     return(
         <label>
-            {displayProp.name}
+            {displayProp.value}
         </label>
     );
 }
