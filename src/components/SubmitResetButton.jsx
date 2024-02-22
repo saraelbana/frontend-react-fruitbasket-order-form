@@ -1,8 +1,8 @@
-import "./ResetButton.css";
-function ResetButton(resetButtonTrigger){
+import "./SubmitResetButton.css";
+function SubmitResetButton(){
     return (
-        <button type="button" className="ResetButton" onClick= {resetButtonTrigger.clicked} >
+        <button type="button" >
             Reset
         </button>);
 }
-export default ResetButton;
+export default SubmitResetButton;
