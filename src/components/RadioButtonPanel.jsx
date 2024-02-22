@@ -4,8 +4,8 @@ import LabelField from "./LabelField.jsx";
 function RadioButtonPanel(prop){
     return (
         <div>
-            <InputField type = {prop.type}/>
-            <LabelField value = {prop.name}/>
+            <InputField type = {prop.type} name = {prop.name} value = {prop.value}/>
+            <LabelField value = {prop.value}/>
         </div>
     );
 }
