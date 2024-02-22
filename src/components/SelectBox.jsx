@@ -6,9 +6,9 @@ function SelectBox(box){
     <div>
         <LabelField value={box.name}/>
         <select id = "delivery-frequency" name={box.name}>
-            <SelectBoxOption value="weekly"/>
-            <SelectBoxOption value="every other week"/>
-            <SelectBoxOption value="monthly"/>
+            <SelectBoxOption name="weekly"/>
+            <SelectBoxOption name="every other week"/>
+            <SelectBoxOption name="monthly"/>
         </select>
     </div>
   );
