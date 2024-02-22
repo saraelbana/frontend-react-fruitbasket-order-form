@@ -3,9 +3,10 @@ import LabelInputPanel from "./LabelInputPanel.jsx";
 function RegisterForm(){
     return(
         <ul className="RegisterForm">
-            <LabelInputPanel value = "First Name"/>
-            <LabelInputPanel value = "Last Name"/>
-            <LabelInputPanel value = "Age"/>
+            <LabelInputPanel value = "First Name" inputType = "text"/>
+            <LabelInputPanel value = "Last Name" inputType = "text"/>
+            <LabelInputPanel value = "Age" inputType = "number"/>
+            <LabelInputPanel value = "Postcode" inputType = "text"/>
 
         </ul>
     );
