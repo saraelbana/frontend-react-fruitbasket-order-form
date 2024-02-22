@@ -1,11 +1,11 @@
 import LabelField from "./LabelField.jsx";
-import InputTextField from "./InputTextField.jsx";
+import InputField from "./InputField.jsx";
 
 function LabelInputPanel(panelType){
     return(
         <div className= "LabelInputPanel">
             <LabelField value={panelType.value} />
-            <InputTextField type = {panelType.inputType}/>
+            <InputField type = {panelType.inputType}/>
         </div>
     );
 }
