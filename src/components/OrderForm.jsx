@@ -8,7 +8,7 @@ function OrderForm(fruitsInventory) {
            {
                fruitsInventory.fruitsInventory.map((fruit, index) => (<FruitQuantitySelectorPanel key={index} fruit={fruit} />))
            }
-           <ResetButton/>
+           <ResetButton name="Reset"/>
        </ul>
     );
 }

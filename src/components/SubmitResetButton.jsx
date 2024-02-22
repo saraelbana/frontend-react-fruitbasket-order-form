@@ -1,8 +1,8 @@
 import "./SubmitResetButton.css";
-function SubmitResetButton(){
+function SubmitResetButton(button){
     return (
         <button type="button" >
-            Reset
+            {button.name}
         </button>);
 }
 export default SubmitResetButton;

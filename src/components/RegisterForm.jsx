@@ -1,6 +1,7 @@
 import LabelInputPanel from "./LabelInputPanel.jsx";
 import SubmitResetButton from "./SubmitResetButton.jsx";
 import SelectBox from "./SelectBox.jsx";
+import RadioButton from "./RadioButton.jsx";
 
 function RegisterForm(){
     return(
@@ -10,7 +11,8 @@ function RegisterForm(){
             <LabelInputPanel value = "Age" inputType = "number"/>
             <LabelInputPanel value = "Postcode" inputType = "text"/>
             <SelectBox name="Delivery frequency"/>
-            <SubmitResetButton/>
+            <RadioButton type = "radio" name = "deliveryTime"/>
+            <SubmitResetButton name ="Submit"/>
         </ul>
     );
 }
