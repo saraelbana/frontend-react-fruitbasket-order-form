@@ -1,15 +1,13 @@
 import FruitQuantitySelectorPanel from "./FruitQuantitySelectorPanel.jsx";
 import ResetButton from "./SubmitResetButton.jsx";
 import './OrderForm.css';
-import {useEffect, useState} from "react";
+import {useState} from "react";
 function OrderForm(fruitsInventory) {
     let [resetClicked, setResetClicked] = useState(false);
     function resetForm() {
-        console.log("Reset clicked! again true ");
         setResetClicked(true);
     }
     function completeReset() {
-        console.log("Reset clicked! again false ");
         setResetClicked(false);
     }
     return (
