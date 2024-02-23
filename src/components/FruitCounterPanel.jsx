@@ -1,11 +1,17 @@
 import MinusPlusButton from "./MinusPlusButton.jsx";
 import {decrementCounter, incrementCounter} from "../helpers/inventoryCalculations.js";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import "./FruitCounterPanel.css";
 import LabelField from "./LabelField.jsx";
 function FruitCounterPanel(fruit) {
 
     const [counter, setCounter] = useState(0);
+    useEffect(() => {
+        if (fruit.reset) {
+            setCounter(0);
+            fruit.onReset();
+        }
+    }, [fruit.reset]);
     const increment = () => {
         console.log(fruit.inStock);
         setCounter(prevCounter => incrementCounter(prevCounter, fruit.inStock));
