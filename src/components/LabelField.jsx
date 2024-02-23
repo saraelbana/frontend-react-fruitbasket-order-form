@@ -1,8 +1,11 @@
 function LabelField(displayProp){
-    console.log(displayProp);
+    let displayValue = displayProp.value;
+    if(displayProp.reset){
+        displayValue = 0;
+    }
     return(
         <label>
-            {displayProp.value}
+            {displayValue}
         </label>
     );
 }

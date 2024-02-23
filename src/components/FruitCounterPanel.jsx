@@ -4,6 +4,7 @@ import {useState} from "react";
 import "./FruitCounterPanel.css";
 import LabelField from "./LabelField.jsx";
 function FruitCounterPanel(fruit) {
+
     const [counter, setCounter] = useState(0);
     const increment = () => {
         console.log(fruit.inStock);
@@ -11,12 +12,11 @@ function FruitCounterPanel(fruit) {
     };
     const decrement = () => {setCounter(prevCounter =>decrementCounter(prevCounter));
     };
-
     return (
 
         <div className="FruitCounterPanel">
             <MinusPlusButton sign = {"-"} clicked = {decrement}/>
-            <LabelField value = {counter}/>
+            <LabelField value = {counter} reset = {fruit.reset}/>
             <MinusPlusButton sign = {"+"} clicked = {increment}/>
         </div>
       );

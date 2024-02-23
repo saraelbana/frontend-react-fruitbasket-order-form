@@ -1,4 +1,3 @@
-
 function MinusPlusButton(buttonProps){
     return (
         <button type="button" onClick = {buttonProps.clicked}>
