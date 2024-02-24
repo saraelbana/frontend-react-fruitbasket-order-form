@@ -15,7 +15,7 @@ function OrderForm(fruitsInventory) {
            {
                fruitsInventory.fruitsInventory.map((fruit, index) => (<FruitQuantitySelectorPanel key={index} fruit={fruit} reset = {resetClicked} onReset = {completeReset}/>))
            }
-           <ResetButton name="Reset" reset = {resetForm}/>
+           <ResetButton className="reset-button" name="Reset" reset = {resetForm}/>
        </ul>
     );
 }

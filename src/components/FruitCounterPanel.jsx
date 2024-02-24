@@ -19,7 +19,6 @@ function FruitCounterPanel(fruit) {
     const decrement = () => {setCounter(prevCounter =>decrementCounter(prevCounter));
     };
     return (
-
         <div className="FruitCounterPanel">
             <MinusPlusButton sign = {"-"} clicked = {decrement}/>
             <LabelField value = {counter} reset = {fruit.reset}/>
