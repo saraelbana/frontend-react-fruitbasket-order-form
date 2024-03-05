@@ -1,0 +1,8 @@
+.FruitCounterPanel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5f5f5;
+}
